@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="2"  parallel="tests" verbose="4">
+   <listeners>
+        <listener class-name="org.lms.listeners.ExtentReportListener"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="homepagetest">
+        <classes>
+            <class name="tests.HomePageTest"></class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="addcoursetest">
+        <classes>
+            <class name="tests.AddCoursePageTest"></class>
+        </classes>
+    </test>
+
+   <!-- <test verbose="2" preserve-order="true" name="addmaterialtest">
+        <classes>
+            <class name="tests.AddMaterilTest"></class>
+        </classes>
+    </test>-->
+
+</suite>
